@@ -9,6 +9,10 @@ import search from '../assets/logos/search.png'
 export const NavBar = () => {
   const [activeTab, setActiveTab] = useState(null);
 
+  useEffect(() => {
+    // Set the active tab to 0 (ที่พัก) when the component mounts
+    setActiveTab(0);
+  }, []);
 
   const handleTabClick = (tabIndex) => {
     setActiveTab(tabIndex);
@@ -65,8 +69,9 @@ export const NavBar = () => {
           </div>
         </div>
       </div>
-      <div className='search-area'>
-        <div className="search-bar">
+      {activeTab === 0 && (
+      <div className='search-area1'>
+        <div className="search-bar1">
           <button className='location'>
             <p className='title'>สถานที่</p>
             <p className='hint'>ค้นหาปลายทาง</p>
@@ -88,6 +93,28 @@ export const NavBar = () => {
           </button>
         </div>
       </div>
+      )}
+      {activeTab === 1 && (
+      <div className='search-area2'>
+        <div className="search-bar2">
+          <button className='location'>
+            <p className='title'>สถานที่</p>
+            <p className='hint'>ค้นหาปลายทาง</p>
+          </button>
+          <button className='date'>
+            <p className='title'>วันที่</p>
+            <p className='hint'>เพิ่มวันที่</p>
+          </button>
+          <button className='who'>
+            <p className='title'>ใคร</p>
+            <p className='hint'>เพิ่มผู้เข้าพัก</p>
+          </button>
+          <button className="search-button">
+            <img src={search} alt='search' />
+          </button>
+        </div>
+      </div>
+      )}
     </div>
   );
 };
