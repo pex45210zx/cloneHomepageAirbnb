@@ -1,9 +1,84 @@
-.container {
-    height: 162px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.container-area {
-    height: 80px;
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+}
+
+body {
+    font-weight: 400;
+    overflow-x: hidden;
+    position: relative;
+    background-color: #ffffff !important;
+    color: #fff !important;
+    font-family: 'Centra', sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+}
+
+p,
+a,
+li,
+button,
+ul {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
+
+@media (min-width:1700px) {
+    main .container {
+        max-width: 100%;
+        padding: 0 150px;
+    }
+}
+
+p.success {
+    color: green;
+}
+
+p.danger {
+    color: red;
+}
+
+/*** Navbar ***/
+.container {
+    height: 162px;
+    position: fixed;
 }
 
 .Navbar-area {
@@ -32,7 +107,7 @@
 }
 
 .tab-option {
-    color: #B8B8B8;
+    color: #9b9b9b;
     font-weight: 200;
     font-size: 16px;
     background: transparent;
@@ -91,8 +166,10 @@
 }
 
 .choose-lang-region a {
-    display: inline-flex; /* Ensures the anchor tag expands to fit its contents */
-    align-items: center; /* Aligns the contents vertically within the anchor tag */
+    display: inline-flex;
+    /* Ensures the anchor tag expands to fit its contents */
+    align-items: center;
+    /* Aligns the contents vertically within the anchor tag */
     color: black;
     font-weight: 500;
     font-size: 14px;
@@ -101,8 +178,10 @@
     padding: 0px 15px;
     border-radius: 45px;
     cursor: pointer;
-    width: auto; /* Allow the anchor tag to expand horizontally based on its content */
-    height: 45px; /* Set the fixed height of the anchor tag */
+    width: auto;
+    /* Allow the anchor tag to expand horizontally based on its content */
+    height: 45px;
+    /* Set the fixed height of the anchor tag */
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -138,7 +217,8 @@
 }
 
 .menu-profile:hover {
-    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.1);
+    /* Add shadow effect */
 }
 
 .menu {
@@ -167,7 +247,8 @@
     border: 1px solid #e2e2e2;
     border-radius: 50px;
     z-index: 1;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    /* Add shadow effect */
 
 }
 
@@ -184,7 +265,8 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
-    padding: 0 20px; /* Added padding for better alignment */
+    padding: 0 20px;
+    /* Added padding for better alignment */
 }
 
 .location:hover {
@@ -198,10 +280,13 @@
 
 .location .title {
     font-size: 12px;
-    color: #121212; /* Adjusted color */
+    color: #121212;
+    /* Adjusted color */
     position: absolute;
-    top: 0px; /* Positioned at the top */
-    left: 40px; /* Positioned at the left */
+    top: 12px;
+    /* Positioned at the top */
+    left: 40px;
+    /* Positioned at the left */
 }
 
 .location .hint {
@@ -209,7 +294,7 @@
     color: #7e7e7e;
     font-weight: 100;
     position: absolute;
-    bottom: 0px;
+    bottom: 15px;
     left: 40px;
 }
 
@@ -226,7 +311,8 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
-    padding: 0 20px; /* Added padding for better alignment */
+    padding: 0 20px;
+    /* Added padding for better alignment */
 }
 
 .check-in:hover {
@@ -235,10 +321,13 @@
 
 .check-in .title {
     font-size: 12px;
-    color: #121212; /* Adjusted color */
+    color: #121212;
+    /* Adjusted color */
     position: absolute;
-    top: 0px; /* Positioned at the top */
-    left: 20px; /* Positioned at the left */
+    top: 12px;
+    /* Positioned at the top */
+    left: 20px;
+    /* Positioned at the left */
 }
 
 .check-in .hint {
@@ -246,7 +335,7 @@
     color: #7e7e7e;
     font-weight: 100;
     position: absolute;
-    bottom: 0px;
+    bottom: 15px;
     left: 20px;
 }
 
@@ -263,7 +352,8 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
-    padding: 0 20px; /* Added padding for better alignment */
+    padding: 0 20px;
+    /* Added padding for better alignment */
 }
 
 .check-out:hover {
@@ -272,10 +362,13 @@
 
 .check-out .title {
     font-size: 12px;
-    color: #121212; /* Adjusted color */
+    color: #121212;
+    /* Adjusted color */
     position: absolute;
-    top: 0px; /* Positioned at the top */
-    left: 20px; /* Positioned at the left */
+    top: 12px;
+    /* Positioned at the top */
+    left: 20px;
+    /* Positioned at the left */
 }
 
 .check-out .hint {
@@ -283,7 +376,7 @@
     color: #7e7e7e;
     font-weight: 100;
     position: absolute;
-    bottom: 0px;
+    bottom: 15px;
     left: 20px;
 }
 
@@ -295,7 +388,7 @@
     border: 0px solid rgba(194, 194, 194, 0.5);
     border-radius: 45px;
     cursor: pointer;
-    width: 233px;
+    width: 279px;
     height: 66px;
     position: relative;
     overflow: hidden;
@@ -307,10 +400,13 @@
 
 .who .title {
     font-size: 12px;
-    color: #121212; /* Adjusted color */
+    color: #121212;
+    /* Adjusted color */
     position: absolute;
-    top: 0px; /* Positioned at the top */
-    left: 20px; /* Positioned at the left */
+    top: 12px;
+    /* Positioned at the top */
+    left: 20px;
+    /* Positioned at the left */
 }
 
 .who .hint {
@@ -318,7 +414,7 @@
     color: #7e7e7e;
     font-weight: 100;
     position: absolute;
-    bottom: 0px;
+    bottom: 15px;
     left: 20px;
 }
 
@@ -332,7 +428,9 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    z-index: 1;
+    position: relative;
+    left: 792px;
+    top: -58px;
     transition: all 0.3s;
 }
 
