@@ -8,36 +8,22 @@ import search from '../assets/logos/search.png'
 
 export const NavBar = () => {
   const [activeTab, setActiveTab] = useState(null);
-  const [scrolled, setScrolled] = useState(false);
 
-  useEffect(() => {
-    const onScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    }
-
-    window.addEventListener('scroll', onScroll);
-
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
 
   const handleTabClick = (tabIndex) => {
     setActiveTab(tabIndex);
   };
 
   return (
-    <div className={scrolled ? 'container-area' : 'container'}>
-      <div className="Navbar-area">
-        <div className="brand">
+    <div className='container'>
+      <div className='Navbar-area'>
+        <div className='brand'>
           <div className="logo-area">
             <img src={longlogo} alt='logo' />
           </div>
         </div>
         <div className="wrapper">
-          <div className="tablist-area" style={{ pointerEvents: scrolled ? 'none' : 'auto' }}>
+          <div className="tablist-area">
             <div className="tablist">
               <button
                 className={`tab-option ${activeTab === 0 ? 'active' : ''}`}
@@ -60,7 +46,7 @@ export const NavBar = () => {
             </div>
           </div>
         </div>
-        <div className="user-region-area">
+        <div className='user-region-area'>
           <div className="region">
             <div className="your-region">
               <button className='user-region'>ให้เช่าที่พักกับ Airbnb</button>
@@ -79,7 +65,7 @@ export const NavBar = () => {
           </div>
         </div>
       </div>
-      <div className="search-area">
+      <div className='search-area'>
         <div className="search-bar">
           <button className='location'>
             <p className='title'>สถานที่</p>
