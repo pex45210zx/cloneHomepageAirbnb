@@ -1,15 +1,23 @@
 .container {
+    height: 162px;
+}
+
+.container-area {
+    height: 80px;
+}
+
+.Navbar-area {
     width: auto;
     height: 80px;
     display: flex;
     padding: 0px 80px;
     justify-content: space-between;
-    /* Add this line */
 }
 
 .brand {
     align-items: center;
     display: flex;
+    width: 280px;
 }
 
 .brand img {
@@ -17,7 +25,7 @@
     height: 35px;
 }
 
-.tablist-area {
+.wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -68,7 +76,7 @@
     background: transparent;
     border: 0px solid rgba(255, 255, 255, 0.5);
     padding: 0px 15px;
-    border-radius: 50px;
+    border-radius: 45px;
     cursor: pointer;
     width: auto;
     height: 45px;
@@ -91,7 +99,7 @@
     background: transparent;
     border: 0px solid rgba(255, 255, 255, 0.5);
     padding: 0px 15px;
-    border-radius: 50px;
+    border-radius: 45px;
     cursor: pointer;
     width: auto; /* Allow the anchor tag to expand horizontally based on its content */
     height: 45px; /* Set the fixed height of the anchor tag */
@@ -107,8 +115,8 @@
 }
 
 .choose-lang-region a img {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
 }
 
 .profile-area {
@@ -136,11 +144,203 @@
 .menu {
     width: 18px;
     height: 18px;
-    margin-left: 5px;
+    margin-left: 2px;
 }
 
 .user {
     width: 30px;
     height: 30px;
-    margin-left: 15px;
+    margin-left: 13px;
+}
+
+.search-area {
+    display: flex;
+    justify-content: center;
+    height: 88px;
+    padding: 0px 80px;
+}
+
+.search-bar {
+    width: 850px;
+    height: 66px;
+    background: transparent;
+    border: 1px solid #e2e2e2;
+    border-radius: 50px;
+    z-index: 1;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+
+}
+
+.location {
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+    background: transparent;
+    border: 0px solid rgba(194, 194, 194, 0.5);
+    border-radius: 45px;
+    cursor: pointer;
+    width: 284px;
+    height: 66px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    padding: 0 20px; /* Added padding for better alignment */
+}
+
+.location:hover {
+    background: #e6e6e6;
+}
+
+.btw-border {
+    border-right: 1px solid #636363;
+    padding: 0px 2px;
+}
+
+.location .title {
+    font-size: 12px;
+    color: #121212; /* Adjusted color */
+    position: absolute;
+    top: 0px; /* Positioned at the top */
+    left: 40px; /* Positioned at the left */
+}
+
+.location .hint {
+    font-size: 14px;
+    color: #7e7e7e;
+    font-weight: 100;
+    position: absolute;
+    bottom: 0px;
+    left: 40px;
+}
+
+.check-in {
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+    background: transparent;
+    border: 0px solid rgba(194, 194, 194, 0.5);
+    border-radius: 45px;
+    cursor: pointer;
+    width: 142.5px;
+    height: 66px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    padding: 0 20px; /* Added padding for better alignment */
+}
+
+.check-in:hover {
+    background: #e6e6e6;
+}
+
+.check-in .title {
+    font-size: 12px;
+    color: #121212; /* Adjusted color */
+    position: absolute;
+    top: 0px; /* Positioned at the top */
+    left: 20px; /* Positioned at the left */
+}
+
+.check-in .hint {
+    font-size: 14px;
+    color: #7e7e7e;
+    font-weight: 100;
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+}
+
+.check-out {
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+    background: transparent;
+    border: 0px solid rgba(194, 194, 194, 0.5);
+    border-radius: 45px;
+    cursor: pointer;
+    width: 142.5px;
+    height: 66px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    padding: 0 20px; /* Added padding for better alignment */
+}
+
+.check-out:hover {
+    background: #e6e6e6;
+}
+
+.check-out .title {
+    font-size: 12px;
+    color: #121212; /* Adjusted color */
+    position: absolute;
+    top: 0px; /* Positioned at the top */
+    left: 20px; /* Positioned at the left */
+}
+
+.check-out .hint {
+    font-size: 14px;
+    color: #7e7e7e;
+    font-weight: 100;
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+}
+
+.who {
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+    background: transparent;
+    border: 0px solid rgba(194, 194, 194, 0.5);
+    border-radius: 45px;
+    cursor: pointer;
+    width: 233px;
+    height: 66px;
+    position: relative;
+    overflow: hidden;
+}
+
+.who:hover {
+    background: #e6e6e6;
+}
+
+.who .title {
+    font-size: 12px;
+    color: #121212; /* Adjusted color */
+    position: absolute;
+    top: 0px; /* Positioned at the top */
+    left: 20px; /* Positioned at the left */
+}
+
+.who .hint {
+    font-size: 14px;
+    color: #7e7e7e;
+    font-weight: 100;
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+}
+
+.search-button {
+    background: #ff5A60;
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.3s;
+}
+
+.search-button:hover {
+    background: #d64c50;
+}
+
+.search-button img {
+    width: 18px;
+    height: 18px;
 }
