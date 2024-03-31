@@ -1,0 +1,65 @@
+// Update the NavBar component to include menu and user images in the profile button
+import React, { useState } from 'react';
+import './NavBar.css';
+import longlogo from '../assets/logos/long-logo.png';
+import regions from '../assets/logos/regions.png';
+import menu from '../assets/logos/menu.png';
+import user from '../assets/logos/user.png';
+
+export const NavBar = () => {
+  const [activeTab, setActiveTab] = useState(null);
+
+  const handleTabClick = (tabIndex) => {
+    setActiveTab(tabIndex);
+  };
+
+  return (
+    <div className="container">
+      <div className="brand">
+        <div className="logo-area">
+          <img src={longlogo} alt='logo' />
+        </div>
+      </div>
+      <div className="tablist-area">
+        <div className="tablist">
+          <button
+            className={`tab-option ${activeTab === 0 ? 'active' : ''}`}
+            onClick={() => handleTabClick(0)}
+          >
+            ที่พัก
+          </button>
+          <button
+            className={`tab-option ${activeTab === 1 ? 'active' : ''}`}
+            onClick={() => handleTabClick(1)}
+          >
+            Experiences
+          </button>
+          <button
+            className={`tab-option ${activeTab === 2 ? 'active' : ''}`}
+            onClick={() => handleTabClick(2)}
+          >
+            Experiences Online
+          </button>
+        </div>
+      </div>
+      <div className="user-region-area">
+        <div className="region">
+          <div className="your-region">
+            <button className='user-region'>ให้เช่าที่พักกับ Airbnb</button>
+          </div>
+          <div className="choose-lang-region">
+            <a href="">
+              <img src={regions} alt='regions' />
+            </a>
+          </div>
+        </div>
+        <div className="profile-area">
+          <button className='menu-profile'>
+            <img className='menu' src={menu} alt="menu" />
+            <img className='user' src={user} alt="user" />
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
