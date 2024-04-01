@@ -84,6 +84,14 @@ p.danger {
 
 }
 
+.container-scrolled {
+    height: 80px;
+    width: 100%;
+    background: #ffffff;
+    position: fixed;
+
+}
+
 .Navbar-area {
     width: auto;
     height: 80px;
@@ -482,7 +490,6 @@ p.danger {
     left: 20px;
 }
 
-
 .search-button {
     background: #ff5A60;
     border: none;
@@ -506,4 +513,146 @@ p.danger {
 .search-button img {
     width: 18px;
     height: 18px;
+}
+
+.search-area1,
+.search-area2 {
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+
+.search-scrolled {
+    display: none;
+    position: fixed;
+    /* หรือ position: sticky; */
+    top: 10px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    /* หรือค่าที่ต้องการ */
+}
+
+.hidden {
+    display: none;
+}
+
+.search-area3 {
+    display: none;
+    justify-content: center;
+    height: 88px;
+    padding: 0px 80px;
+}
+
+.search-bar3 {
+    width: 358px;
+    height: 46px;
+    background: transparent;
+    border: 1px solid #e2e2e2;
+    border-radius: 50px;
+    z-index: 1;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    /* Add shadow effect */
+
+}
+
+.search-bar3:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.s3-butt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+    background: transparent;
+    border: 0px solid rgba(194, 194, 194, 0.5);
+    border-radius: 45px;
+    cursor: pointer;
+    width: 358px;
+    height: 46px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    padding: 0 20px;
+    /* Added padding for better alignment */
+}
+
+.s3-title1 {
+    font-size: 14px;
+    color: #121212;
+    position: relative;
+    bottom: 3px;
+    left: 3px;
+}
+
+.s3-title2 {
+    font-size: 14px;
+    color: #121212;
+    position: relative;
+    bottom: 3px;
+    right: 20px;
+}
+
+.s3-hint {
+    font-size: 14px;
+    color: #7e7e7e;
+    font-weight: 100;
+    position: relative;
+    bottom: 3px;
+    right: 40px;
+}
+
+.search-button2 {
+    background: #ff5A60;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    left: 317px;
+    top: -40px;
+    transition: all 0.3s;
+}
+
+.search-button2:hover {
+    background: #d64c50;
+}
+
+.search-button2 img {
+    width: 15px;
+    height: 15px;
+}
+
+.search3-scrolled {
+    display: flex;
+    position: fixed;
+    /* หรือ position: sticky; */
+    top: 18px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+
+.search-area1,
+.search-area2,
+.search-area3 {
+  transition: all 0.3s ease-out;
+}
+
+.search-area1.hidden,
+.search-area2.hidden {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.search-area3 {
+  opacity: 1;
+  transform: translateY(0);
 }
