@@ -9,7 +9,7 @@ import searchScope from '../assets/logos/search.png'
 export const NavBar = () => {
   const [activeTab, setActiveTab] = useState(null);
   const [scrolled, setScrolled] = useState(false);
-
+ 
   useEffect(() => {
     const onScroll = () => {
       const scrolledDistance = window.scrollY;
@@ -41,32 +41,36 @@ export const NavBar = () => {
           </button>
         </form>
         <div className={`search-bar ${scrolled ? 'expanded' : ''}`}>
-          <button className='search-lo' >
+          <button className={`search-lo ${scrolled ? 'expanded' : ''}`}>
             <span>
               สถานที่
             </span>
             <p>
               ค้นหาปลายทาง
             </p>
-            <div className="bar-btw"></div>
           </button>
-          <button className='search-in' >
-            <span>
-              เช็คอิน
-            </span>
-            <p>
-              เพิ่มวันที่
-            </p>
-          </button>
-          <button className='search-out' >
-            <span>
-              เช็คเอาท์
-            </span>
-            <p>
-              เพิ่มวันที่
-            </p>
-          </button>
-          <button className='search-who' >
+            <div className="bar-btw1"></div>
+          <div className="form-chkinout">
+            <button className={`search-in ${scrolled ? 'expanded' : ''}`}>
+              <span>
+                เช็คอิน
+              </span>
+              <p>
+                เพิ่มวันที่
+              </p>
+            </button>
+            <div className="bar-btw2"></div>
+            <button className={`search-out ${scrolled ? 'expanded' : ''}`}>
+              <span>
+                เช็คเอาท์
+              </span>
+              <p>
+                เพิ่มวันที่
+              </p>
+            </button>
+            <div className="bar-btw3"></div>
+          </div>
+          <button className={`search-who ${scrolled ? 'expanded' : ''}`}>
             <span>
               ใคร
             </span>
