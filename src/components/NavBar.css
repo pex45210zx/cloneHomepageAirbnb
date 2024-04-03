@@ -91,7 +91,7 @@ p.danger {
     height: 268px;
     position: fixed;
     top: -168px;
-    background: #858585;
+    background: #fff;
     transition: all 0.2s linear 0.08s;
     margin: 4.5rem 0px;
 }
@@ -101,7 +101,10 @@ p.danger {
     height: 88px;
 }
 
-.topic {
+/***** Brand CSS *****/
+
+/***** Tablist CSS *****/
+.tablist {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -109,19 +112,27 @@ p.danger {
     top: -5px;
     max-width: 850px;
     height: 80px;
-    transition: all 0.2s linear 0.08s; /* Transition for smooth effect */
+    transition: all 0.2s linear 0.08s;
+    /* Transition for smooth effect */
 }
 
-.topic p {
+.tablist-butt {
     padding: 0px 30px;
     transition: all 0.2s linear 0.08s;
 }
 
-.topic.expanded {
+.tablist-butt p {
+    color: #858585;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: inherit;
+}
+
+.tablist.expanded {
     top: -80px;
 }
 
-.topic.expanded p {
+.tablist.expanded .tablist-butt {
     padding: 0px 0px;
 }
 
@@ -140,9 +151,9 @@ p.danger {
     position: fixed;
     transition: all 0.2s linear 0.08s;
     margin: 2.5rem 0px;
-  }
-  
-  .search-bar.expanded {
+}
+
+.search-bar.expanded {
     width: 358px;
     height: 48px;
     background: transparent;
@@ -152,17 +163,75 @@ p.danger {
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
     position: relative;
     top: -45px;
-  }
+}
 
-  .search-bar p {
-    padding: 0 10px;
-  }
-
-  .search-bar.expanded p {
+.search-bar.expanded .search-lo {
     display: none;
-  }
-  
-  .search-butt {
+}
+
+/*** Search-lo ***/
+
+.search-lo {
+    background: transparent;
+    border: 0px solid rgba(194, 194, 194, 0.5);
+    border-radius: 45px;
+    cursor: pointer;
+    width: 284px;
+    height: 66px;
+    left: 0px;
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+    padding: 0 20px;
+    margin-right: 10px;
+    transition: all 0.2s linear 0.08s;
+}
+
+.search-lo:hover {
+    background: #e3e3e3;
+}
+
+.search-lo span {
+    font-size: 12px;
+    color: #000;
+    font-weight: bold;
+    position: absolute;
+    padding: 0 10px;
+    left: 20px;
+    top: 15px;
+}
+
+.search-lo.expanded span {
+    display: none;
+}
+
+.search-lo p {
+    font-size: 14px;
+    color: #9a9a9a;
+    font-weight: 200;
+    position: absolute;
+    padding: 0 10px;
+    left: 20px;
+    top: 33px;
+}
+
+.search-lo.expanded p {
+    display: none;
+}
+
+.bar-btw {
+    position: absolute;
+    width: 1px;
+    height: 35px;
+    top: 5px;
+    right: -10px;
+    background-color: #b8b8b8;
+    margin: 0 5px;
+}
+
+/*** Search-butt ***/
+
+.search-butt {
     background: #FF385C;
     border: none;
     border-radius: 50%;
@@ -175,25 +244,29 @@ p.danger {
     position: absolute;
     right: 9px;
     transition: all 0.2s linear 0.08s;
-  }
+}
 
-  .search-butt:hover {
+.search-butt:hover {
     background: #cd2f4c;
-  }
+}
 
-  .search-butt.expanded {
+.search-butt.expanded {
     width: 32px;
     height: 32px;
     right: 8px;
     top: 8px;
-  }
+}
 
-  .search-butt img {
+.search-butt img {
     width: 18px;
     height: 18px;
-  }
+}
 
-  .search-butt.expanded img {
+.search-butt.expanded img {
     width: 12px;
     height: 12px;
-  }
+}
+
+/***** Region CSS *****/
+
+/***** User Menu CSS *****/

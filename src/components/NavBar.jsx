@@ -29,21 +29,51 @@ export const NavBar = () => {
     <div className="con-page">
       <div className={`navbar ${scrolled ? 'expanded' : ''}`}>
         <div className={`navbar-bg ${scrolled ? 'expanded' : ''}`}></div>
-        <form className={`topic ${scrolled ? 'expanded' : ''}`}>
-          <p>hahah</p>
-          <p>hahah</p>
-          <p>hahah</p>
+        <form className={`tablist ${scrolled ? 'expanded' : ''}`}>
+          <button className='tablist-butt'>
+            <p>ที่พัก</p>
+          </button>
+          <button className='tablist-butt'>
+            <p>เอ็กซ์พีเรียนซ์</p>
+          </button>
+          <button className='tablist-butt'>
+            <p>เอ็กซ์พีเรียนซ์ออนไลน์</p>
+          </button>
         </form>
         <div className={`search-bar ${scrolled ? 'expanded' : ''}`}>
-          <p>
-            hello world
-          </p>
-          <p>
-            hello world
-          </p>
-          <p>
-            hello world
-          </p>
+          <button className='search-lo' >
+            <span>
+              สถานที่
+            </span>
+            <p>
+              ค้นหาปลายทาง
+            </p>
+            <div className="bar-btw"></div>
+          </button>
+          <button className='search-in' >
+            <span>
+              เช็คอิน
+            </span>
+            <p>
+              เพิ่มวันที่
+            </p>
+          </button>
+          <button className='search-out' >
+            <span>
+              เช็คเอาท์
+            </span>
+            <p>
+              เพิ่มวันที่
+            </p>
+          </button>
+          <button className='search-who' >
+            <span>
+              ใคร
+            </span>
+            <p>
+              เพิ่มผู้เข้าพัก
+            </p>
+          </button>
           <button className={`search-butt ${scrolled ? 'expanded' : ''}`}>
             <img src={searchScope} alt='search' />
           </button>
