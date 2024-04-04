@@ -109,7 +109,7 @@ p.danger {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    top: -5px;
+    top: 0px;
     max-width: 850px;
     height: 80px;
     transition: all 0.2s linear 0.08s;
@@ -117,15 +117,62 @@ p.danger {
 }
 
 .tablist-butt {
-    padding: 0px 30px;
+    background: transparent;
+    border: 0px solid rgba(194, 194, 194, 0.5);
+    border-radius: 45px;
     transition: all 0.2s linear 0.08s;
 }
 
-.tablist-butt p {
+.sty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 0px solid rgba(194, 194, 194, 0.5);
+    border-radius: 45px;
+    width: 62.5px;
+    height: 44px;
+    cursor: pointer;
     color: #858585;
     font-size: 16px;
     font-weight: 300;
     font-family: inherit;
+}
+
+.exp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 0px solid rgba(194, 194, 194, 0.5);
+    border-radius: 45px;
+    width: 118px;
+    height: 44px;
+    cursor: pointer;
+    color: #858585;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: inherit;
+}
+
+.expol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 0px solid rgba(194, 194, 194, 0.5);
+    border-radius: 45px;
+    width: 173px;
+    height: 44px;
+    cursor: pointer;
+    color: #858585;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: inherit;
+}
+
+.tablist-butt:hover p {
+    background: #e3e3e3;
 }
 
 .tablist.expanded {
@@ -133,8 +180,21 @@ p.danger {
 }
 
 .tablist.expanded .tablist-butt {
-    padding: 0px 0px;
+    margin: 0 -30px;
 }
+
+.sty.active,
+.exp.active {
+    color: #000;
+    font-weight: 410;
+}
+
+.sty.active:hover,
+.exp.active:hover {
+    background: #ffffff;
+}
+
+
 
 /*** Search-bar ***/
 
@@ -244,7 +304,7 @@ p.danger {
     padding: 0 20px;
 }
 
-.search-lo:hover + .bar-btw0 {
+.search-lo:hover+.bar-btw0 {
     background-color: #ffffff;
     z-index: 2;
 }
@@ -261,6 +321,73 @@ p.danger {
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
+}
+
+/*** Search-date ***/
+
+.search-date.active {
+    display: none;
+}
+
+.search-date {
+    background: transparent;
+    border: 0px solid rgba(194, 194, 194, 0.5);
+    border-radius: 45px;
+    cursor: pointer;
+    width: 280px;
+    height: 64px;
+    left: 1px;
+    position: absolute;
+    overflow: hidden;
+    z-index: 5;
+    padding: 0 20px;
+}
+
+.search-date:hover {
+    background: #e3e3e3;
+}
+
+.search-date span {
+    font-size: 12px;
+    color: #000;
+    font-weight: bold;
+    position: absolute;
+    padding: 0 10px;
+    left: 20px;
+    top: 12px;
+}
+
+.search-date p {
+    font-size: 14px;
+    color: #9a9a9a;
+    font-weight: 200;
+    position: absolute;
+    padding: 0 10px;
+    left: 20px;
+    top: 30px;
+}
+
+.search-date.expanded p,
+.search-date.expanded span {
+    display: none;
+}
+
+.bar-btw7 {
+    background: transparent;
+    cursor: pointer;
+    width: 285px;
+    height: 56px;
+    left: -2px;
+    top: 4px;
+    position: absolute;
+    overflow: hidden;
+    z-index: -2;
+    padding: 0 20px;
+}
+
+.search-date:hover ~ .bar-btw7 {
+    background-color: #ffffff;
+    z-index: 2;
 }
 
 /*** Search-in ***/
@@ -332,7 +459,7 @@ p.danger {
     padding: 0 20px;
 }
 
-.search-in:hover ~ .bar-btw2 {
+.search-in:hover~.bar-btw2 {
     background-color: #ffffff;
     z-index: 2;
 }
@@ -404,7 +531,7 @@ p.danger {
     padding: 0 20px;
 }
 
-.search-out:hover + .bar-btw4 {
+.search-out:hover+.bar-btw4 {
     background-color: #ffffff;
     z-index: 1;
 }
@@ -468,7 +595,7 @@ p.danger {
     padding: 0 20px;
 }
 
-.search-who:hover + .bar-btw5 {
+.search-who:hover+.bar-btw5 {
     background-color: #ffffff;
     z-index: 1;
 }
