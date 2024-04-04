@@ -216,15 +216,101 @@ p.danger {
 }
 
 .search-bar.expanded {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
     width: 358px;
     height: 48px;
     background: transparent;
     border: 1px solid #e2e2e2;
     border-radius: 50px;
     z-index: 1;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
     position: relative;
-    top: -45px;
+    top: -44px;
+    transition: all 0.2s linear 0.08s;
+}
+
+.search-bar.expanded:hover {
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar.expanded .whre {
+    font-size: 14px;
+    color: #000;
+    font-weight: 450;
+    position: absolute;
+    left: 25px;
+}
+
+.search-bar.expanded .wekk {
+    font-size: 14px;
+    color: #000;
+    font-weight: 450;
+    position: absolute;
+    left: 110px;
+}
+
+.search-bar.expanded .whu {
+    font-size: 14px;
+    color: #9a9a9a;
+    font-weight: 200;
+    position: absolute;
+    left: 232px;
+}
+
+.search-bar.expanded .bar-btw11 {
+    position: absolute;
+    width: 1px;
+    height: 25px;
+    top: 10px;
+    background-color: #9a9a9a;
+    left: 95px;
+    z-index: -2;
+}
+
+.search-bar.expanded .bar-btw12 {
+    position: absolute;
+    width: 1px;
+    height: 25px;
+    top: 10px;
+    background-color: #9a9a9a;
+    left: 216px;
+    z-index: -2;
+}
+
+.search-bar.expanded .whre,
+.search-bar.expanded .wekk,
+.search-bar.expanded .whu,
+.search-bar.expanded .bar-btw11,
+.search-bar.expanded .bar-btw12 {
+    opacity: 1;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.search-bar .whre,
+.search-bar .wekk,
+.search-bar .whu,
+.search-bar .bar-btw11,
+.search-bar .bar-btw12 {
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.search-lo,
+.form-chkinout,
+.search-in,
+.search-out,
+.search-who {
+    opacity: 1;
+    transition: opacity 0.65s ease-in-out;
+}
+
+.bar-btw0,
+.bar-btw5,
+.bar-btw6 {
+    opacity: 1;
+    transition: opacity 0.65s ease-in-out;
 }
 
 .search-bar.expanded .search-lo,
@@ -232,13 +318,15 @@ p.danger {
 .search-bar.expanded .search-in,
 .search-bar.expanded .search-out,
 .search-bar.expanded .search-who {
-    display: none;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
 }
 
 .bar-btw0.expanded,
 .bar-btw5.expanded,
 .bar-btw6.expanded {
-    display: none;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
 }
 
 
@@ -624,6 +712,8 @@ p.danger {
     position: absolute;
     right: 9px;
     z-index: 10;
+    transition: all 0.2s linear 0.08s;
+
 }
 
 .search-butt:hover {
