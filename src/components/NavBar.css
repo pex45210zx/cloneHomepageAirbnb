@@ -168,13 +168,19 @@ p.danger {
 }
 
 .search-bar.expanded .search-lo,
-.search-bar.expanded .bar-btw1,
 .search-bar.expanded .form-chkinout,
 .search-bar.expanded .search-in,
 .search-bar.expanded .search-out,
 .search-bar.expanded .search-who {
     display: none;
 }
+
+.bar-btw0.expanded,
+.bar-btw5.expanded,
+.bar-btw6.expanded {
+    display: none;
+}
+
 
 /* .search-bar.expanded:hover {
     cursor: pointer;
@@ -188,12 +194,12 @@ p.danger {
     border: 0px solid rgba(194, 194, 194, 0.5);
     border-radius: 45px;
     cursor: pointer;
-    width: 284px;
+    width: 283px;
     height: 64px;
     left: 0px;
     position: absolute;
     overflow: hidden;
-    z-index: 1;
+    z-index: 3;
     padding: 0 20px;
 }
 
@@ -226,33 +232,32 @@ p.danger {
     display: none;
 }
 
-.bar-btw1 {
+.bar-btw0 {
+    background: transparent;
+    cursor: pointer;
+    width: 265px;
+    height: 56px;
+    left: 21px;
     position: absolute;
-    width: 1px;
-    height: 35px;
-    top: 13px;
-    background-color: #b8b8b8;
-    left: 284px;
+    overflow: hidden;
+    z-index: -2;
+    padding: 0 20px;
 }
 
-.search-lo:hover + .bar-btw1 {
-    display: none;
-}
-
-.search-lo.expanded+.bar-btw1 {
-    display: none;
+.search-lo:hover + .bar-btw0 {
+    background-color: #ffffff;
+    z-index: 2;
 }
 
 /**Form-Chkinout**/
 
 .form-chkinout {
     background: transparent;
-    width: 282px;
+    width: 283px;
     height: 64px;
-    left: 284px;
+    left: 284.5px;
     position: absolute;
     overflow: hidden;
-    z-index: 1;
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
@@ -265,12 +270,12 @@ p.danger {
     border: 0px solid rgba(194, 194, 194, 0.5);
     border-radius: 45px;
     cursor: pointer;
-    width: 141px;
+    width: 140px;
     height: 64px;
     left: 0px;
     position: absolute;
     overflow: hidden;
-    z-index: 1;
+    z-index: 5;
     padding: 0 20px;
 }
 
@@ -303,21 +308,42 @@ p.danger {
     display: none;
 }
 
+
+.bar-btw1 {
+    position: absolute;
+    width: 1px;
+    height: 35px;
+    top: 13px;
+    background-color: #9a9a9a;
+    left: 0px;
+    z-index: -2;
+}
+
 .bar-btw2 {
+    background: transparent;
+    cursor: pointer;
+    width: 144px;
+    height: 56px;
+    left: -2px;
+    top: 4px;
+    position: absolute;
+    overflow: hidden;
+    z-index: -2;
+    padding: 0 20px;
+}
+
+.search-in:hover ~ .bar-btw2 {
+    background-color: #ffffff;
+    z-index: 2;
+}
+
+.bar-btw3 {
     position: absolute;
     width: 1px;
     height: 35px;
     top: 13px;
     background-color: #b8b8b8;
     left: 141px;
-}
-
-.search-in:hover ~ .bar-btw2 {
-    display: none;
-}
-
-.search-in.expanded + .bar-btw2 {
-    display: none;
 }
 
 /*** Search-out ***/
@@ -327,13 +353,13 @@ p.danger {
     border: 0px solid rgba(194, 194, 194, 0.5);
     border-radius: 45px;
     cursor: pointer;
-    width: 141.5px;
+    width: 139.5px;
     height: 64px;
-    right: 0px;
+    left: 142px;
     position: absolute;
     overflow: hidden;
-    z-index: 1;
     padding: 0 20px;
+    z-index: 5;
 }
 
 .search-out:hover {
@@ -365,21 +391,22 @@ p.danger {
     display: none;
 }
 
-.bar-btw3 {
+.bar-btw4 {
+    background: transparent;
+    cursor: pointer;
+    width: 143px;
+    height: 56px;
+    left: 140px;
+    top: 4px;
     position: absolute;
-    width: 1px;
-    height: 35px;
-    top: 13px;
-    background-color: #b8b8b8;
-    right: 0px;
+    overflow: hidden;
+    z-index: -2;
+    padding: 0 20px;
 }
 
-.search-out:hover + .bar-btw3 {
-    display: none;
-}
-
-.search-out.expanded +.bar-btw3 {
-    display: none;
+.search-out:hover + .bar-btw4 {
+    background-color: #ffffff;
+    z-index: 1;
 }
 
 /*** Search-who ***/
@@ -389,13 +416,13 @@ p.danger {
     border: 0px solid rgba(194, 194, 194, 0.5);
     border-radius: 45px;
     cursor: pointer;
-    width: 284px;
+    width: 281px;
     height: 64px;
-    right: 0px;
+    left: 567px;
     position: absolute;
     overflow: hidden;
-    z-index: 1;
     padding: 0 20px;
+    z-index: 2;
 }
 
 .search-who:hover {
@@ -428,7 +455,32 @@ p.danger {
     z-index: -1;
 }
 
+.bar-btw5 {
+    background: transparent;
+    cursor: pointer;
+    width: 143px;
+    height: 56px;
+    left: 565px;
+    top: 4px;
+    position: absolute;
+    overflow: hidden;
+    z-index: -2;
+    padding: 0 20px;
+}
 
+.search-who:hover + .bar-btw5 {
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+.bar-btw6 {
+    position: absolute;
+    width: 1px;
+    height: 35px;
+    top: 13px;
+    background-color: #b8b8b8;
+    left: 566px;
+}
 
 /*** Search-butt ***/
 
@@ -449,7 +501,6 @@ p.danger {
 
 .search-butt:hover {
     background: #cd2f4c;
-    z-index: -1;
 }
 
 .search-butt.expanded {

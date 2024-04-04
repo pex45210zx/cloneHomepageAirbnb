@@ -49,7 +49,7 @@ export const NavBar = () => {
               ค้นหาปลายทาง
             </p>
           </button>
-            <div className="bar-btw1"></div>
+          <div className={`bar-btw0 ${scrolled ? 'expanded' : ''}`}></div>
           <div className="form-chkinout">
             <button className={`search-in ${scrolled ? 'expanded' : ''}`}>
               <span>
@@ -59,7 +59,9 @@ export const NavBar = () => {
                 เพิ่มวันที่
               </p>
             </button>
+            <div className="bar-btw1"></div>
             <div className="bar-btw2"></div>
+            <div className="bar-btw3"></div>
             <button className={`search-out ${scrolled ? 'expanded' : ''}`}>
               <span>
                 เช็คเอาท์
@@ -68,7 +70,7 @@ export const NavBar = () => {
                 เพิ่มวันที่
               </p>
             </button>
-            <div className="bar-btw3"></div>
+            <div className="bar-btw4"></div>
           </div>
           <button className={`search-who ${scrolled ? 'expanded' : ''}`}>
             <span>
@@ -78,6 +80,8 @@ export const NavBar = () => {
               เพิ่มผู้เข้าพัก
             </p>
           </button>
+          <div className={`bar-btw5 ${scrolled ? 'expanded' : ''}`}></div>
+          <div className={`bar-btw6 ${scrolled ? 'expanded' : ''}`}></div>
           <button className={`search-butt ${scrolled ? 'expanded' : ''}`}>
             <img src={searchScope} alt='search' />
           </button>
