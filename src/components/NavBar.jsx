@@ -45,6 +45,18 @@ export const NavBar = () => {
           </button>
         </form>
         <div className={`search-bar ${scrolled ? 'expanded' : ''}`}>
+            <p className='whre'>
+              ที่ไหนก็ได้
+            </p>
+            <div className="bar-btw11"></div>
+            <p className='wekk'>
+              สัปดาห์ ทุกเวลา
+            </p>
+            <div className="bar-btw12"></div>
+            <p className='whu'>
+              เพิ่มผู้เข้าพัก
+            </p>
+
           <button className={`search-lo ${scrolled ? 'expanded' : ''}`}>
             <span>
               สถานที่
@@ -81,19 +93,19 @@ export const NavBar = () => {
           )}
 
           {activeTab === 'experience' && (
-          <div className="form-chkinout">
-            <button className={`search-date ${scrolled ? 'expanded' : ''}`}>
-              <span>
-                วันที่
-              </span>
-              <p>
-                เพิ่มวันที่
-              </p>
-            </button>
-            <div className="bar-btw1"></div>
-            <div className="bar-btw7"></div>
-            <div className="bar-btw4"></div>
-          </div>
+            <div className="form-chkinout">
+              <button className={`search-date ${scrolled ? 'expanded' : ''}`}>
+                <span>
+                  วันที่
+                </span>
+                <p>
+                  เพิ่มวันที่
+                </p>
+              </button>
+              <div className="bar-btw1"></div>
+              <div className="bar-btw7"></div>
+              <div className="bar-btw4"></div>
+            </div>
           )}
 
           <button className={`search-who ${scrolled ? 'expanded' : ''}`}>
