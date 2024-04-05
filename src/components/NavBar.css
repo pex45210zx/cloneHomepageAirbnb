@@ -80,8 +80,9 @@ p.danger {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 80px;
     width: 100%;
-    height: 168px;
+    height: 80px;
     position: fixed;
     background: transparent;
 }
@@ -102,6 +103,22 @@ p.danger {
 }
 
 /***** Brand CSS *****/
+
+.brand {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+    left: 80px;
+    width: 556px;
+    height: 80px;
+}
+
+.brand img {
+    width: 102px;
+    height: auto;
+}
+
 
 /***** Tablist CSS *****/
 .tablist {
@@ -227,7 +244,7 @@ p.danger {
     border-radius: 50px;
     z-index: 1;
     position: relative;
-    top: -44px;
+    top: 0px;
     transition: all 0.2s linear 0.08s;
 }
 
@@ -328,12 +345,6 @@ p.danger {
     opacity: 0;
     transition: opacity 0.2s ease-in-out;
 }
-
-
-/* .search-bar.expanded:hover {
-    cursor: pointer;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-} */
 
 /*** Search-lo ***/
 
@@ -737,6 +748,114 @@ p.danger {
     height: 12px;
 }
 
+/***** Profile CSS *****/
+
+.profile {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+    right: 80px;
+    width: 556px;
+    height: 80px;
+}
+
 /***** Region CSS *****/
 
+.region {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 92px;
+    width: 200px;
+    height: 42px;
+    z-index: 2;
+}
+
+.bnb-sv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 0px solid rgba(194, 194, 194, 0.5);
+    border-radius: 45px;
+    cursor: pointer;
+    width: 160px;
+    height: 42px;
+    overflow: hidden;
+    padding: 0 10px;
+}
+
+.bnb-sv:hover {
+    background: #f1f1f1;
+}
+
+.bnb-sv p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+
+.region-lang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 0px solid rgba(194, 194, 194, 0.5);
+    border-radius: 45px;
+    cursor: pointer;
+    width: 42px;
+    height: 42px;
+    overflow: hidden;
+    padding: 0 10px;
+}
+
+.region-lang:hover {
+    background: #f1f1f1;
+}
+
+.region-lang img {
+    width: 18px;
+    height: 18px;
+}
+
+
 /***** User Menu CSS *****/
+
+.user-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 1px solid rgba(194, 194, 194, 0.5);
+    border-radius: 45px;
+    cursor: pointer;
+    width: 86px;
+    height: 48px;
+    right: 0px;
+    position: absolute;
+    padding: 0 10px;
+}
+
+.user-menu:hover {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-icon {
+    padding: 2px 0 0 10px;
+}
+
+.menu-icon img {
+    width: 18px;
+    height: 18px;
+}
+
+.user-icon {
+    padding: 2px 3px 0 10px;
+}
+
+.user-icon img {
+    width: 30px;
+    height: 30px;
+}

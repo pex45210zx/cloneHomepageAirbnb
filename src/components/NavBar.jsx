@@ -33,6 +33,9 @@ export const NavBar = () => {
     <div className="con-page">
       <div className={`navbar ${scrolled ? 'expanded' : ''}`}>
         <div className={`navbar-bg ${scrolled ? 'expanded' : ''}`}></div>
+        <div className="brand">
+          <img src={longlogo} />
+        </div>
         <form className={`tablist ${scrolled ? 'expanded' : ''}`}>
           <div className={`tablist-butt ${activeTab === 'accommodation' ? 'active' : ''}`} onClick={() => handleTabClick('accommodation')}>
             <p className={`sty ${activeTab === 'accommodation' ? 'active' : ''}`}>ที่พัก</p>
@@ -45,17 +48,17 @@ export const NavBar = () => {
           </button>
         </form>
         <div className={`search-bar ${scrolled ? 'expanded' : ''}`}>
-            <p className='whre'>
-              ที่ไหนก็ได้
-            </p>
-            <div className="bar-btw11"></div>
-            <p className='wekk'>
-              สัปดาห์ ทุกเวลา
-            </p>
-            <div className="bar-btw12"></div>
-            <p className='whu'>
-              เพิ่มผู้เข้าพัก
-            </p>
+          <p className='whre'>
+            ที่ไหนก็ได้
+          </p>
+          <div className="bar-btw11"></div>
+          <p className='wekk'>
+            สัปดาห์ ทุกเวลา
+          </p>
+          <div className="bar-btw12"></div>
+          <p className='whu'>
+            เพิ่มผู้เข้าพัก
+          </p>
 
           <button className={`search-lo ${scrolled ? 'expanded' : ''}`}>
             <span>
@@ -121,6 +124,27 @@ export const NavBar = () => {
           <button className={`search-butt ${scrolled ? 'expanded' : ''}`}>
             <img src={searchScope} alt='search' />
           </button>
+        </div>
+        <div className="profile">
+          <div className="region">
+            <div className="bnb-sv">
+              <p>
+                ให้เช่าที่พักกับ Airbnb
+              </p>
+            </div>
+            <div className="region-lang">
+              <img src={regions} />
+            </div>
+          </div>
+
+          <div className="user-menu">
+            <div className="menu-icon">
+              <img src={menu} />
+            </div>
+            <div className="user-icon">
+              <img src={user} />
+            </div>
+          </div>
         </div>
       </div>
     </div>
