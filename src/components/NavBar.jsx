@@ -30,7 +30,7 @@ export const NavBar = () => {
   };
 
   return (
-    <div className="con-page">
+    <>
       <div className={`navbar ${scrolled ? 'expanded' : ''}`}>
         <div className={`navbar-bg ${scrolled ? 'expanded' : ''}`}></div>
         <div className="brand">
@@ -147,6 +147,12 @@ export const NavBar = () => {
           </div>
         </div>
       </div>
-    </div>
+
+      <div className={`topic-bar ${scrolled ? 'expanded' : ''}`}>
+            <div className="topic-menu">
+
+            </div>
+      </div>
+    </>
   );
 };

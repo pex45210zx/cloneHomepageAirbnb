@@ -1,14 +1,13 @@
 import React from "react"
-import { NavBar } from "./components/NavBar"
-import { Topic } from "./components/Topic"
-
+import { NavBar } from "./components/NavBar.jsx"
+import { Body } from "./components/body.jsx"
 
 function App() {
 
   return (
     <>
       <NavBar />
-      <Topic />
+      <Body />
     </>
   )
 }
