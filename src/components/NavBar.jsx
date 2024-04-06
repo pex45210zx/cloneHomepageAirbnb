@@ -147,12 +147,6 @@ export const NavBar = () => {
           </div>
         </div>
       </div>
-
-      <div className={`topic-bar ${scrolled ? 'expanded' : ''}`}>
-            <div className="topic-menu">
-
-            </div>
-      </div>
     </>
   );
 };
