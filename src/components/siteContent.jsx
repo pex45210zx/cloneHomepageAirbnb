@@ -1,7 +1,7 @@
 import React from 'react'
-import './body.css'
+import './siteContent.css'
 
-export const Body = () => {
+export const Contents = () => {
   return (
     <div className='haha'>Topic</div>
   )

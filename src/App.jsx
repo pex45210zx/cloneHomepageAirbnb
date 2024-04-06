@@ -1,7 +1,7 @@
 import React from "react"
 import { NavBar } from "./components/NavBar.jsx"
 import { Filter } from "./components/Filter.jsx"
-import { Body } from "./components/body.jsx"
+import { Contents } from "./components/siteContent.jsx"
 
 function App() {
 
@@ -9,7 +9,7 @@ function App() {
     <>
       <NavBar />
       <Filter />
-      <Body />
+      <Contents />
     </>
   )
 }
