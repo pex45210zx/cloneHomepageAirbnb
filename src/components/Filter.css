@@ -108,9 +108,121 @@ p.danger {
     padding: 0 80px;
 }
 
-.filter-icons {
-    height: 78px;    
+.butt-left-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(circle, rgba(255,255,255,1) 50%, transparent 95%);
+    position: absolute;
+    top: 20px;
+    left: 68px;
+    width: 70px;
+    height: 60px;
+    z-index: 1;
+    transition: all 0.2s linear 0.08s;
 }
+
+.con-filter.expanded .butt-left-area {
+    top: 10px;
+}
+
+.scroll-button-left {
+    background-color: #ffffff;
+    border: 1px solid rgba(194, 194, 194, 0.5);
+    border-radius: 45px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    outline: none;
+    font-size: 20px;
+    color: #888;
+}
+
+.scroll-button-left:hover {
+    top: 35px;
+    left: 101px;
+    width: 32px;
+    height: 32px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.butt-right-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(circle, rgba(255,255,255,1) 50%, transparent 95%);
+    position: absolute;
+    top: 20px;
+    right: 403px;
+    width: 70px;
+    height: 60px;
+    z-index: 1;
+    transition: all 0.2s linear 0.08s;
+}
+
+.con-filter.expanded .butt-right-area {
+    top: 10px;
+}
+
+.scroll-button-right {
+    background-color: #ffffff;
+    border: 1px solid rgba(194, 194, 194, 0.5);
+    border-radius: 45px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    outline: none;
+    font-size: 20px;
+    color: #888;
+}
+
+.scroll-button-right:hover {
+    top: 35px;
+    right: 421px;
+    width: 32px;
+    height: 32px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.icon-area {
+    width: 100%;
+    height: 78px;
+}
+
+.filter-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    left: 120px;
+    height: 78px;
+    width: calc(100% - 580px);
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.filter-icons::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for WebKit browsers */
+}
+
+.filter-icons {
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.links-img {
+    margin: 0 30px;
+    width: 24px;
+    height: 24px;
+}
+
+.link-box p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #2c2c2c;
+}
+
 
 .filter-menu {
     display: flex;
@@ -129,7 +241,7 @@ p.danger {
     border: 1px solid rgba(194, 194, 194, 0.5);
     border-radius: 12px;
     cursor: pointer;
-    width: 100%;
+    width: 98px;
     height: 48px;
 }
 
@@ -165,7 +277,7 @@ p.danger {
     border: 1px solid rgba(194, 194, 194, 0.5);
     border-radius: 12px;
     cursor: pointer;
-    width: 100%;
+    width: 205px;
     height: 48px;
 }
 
