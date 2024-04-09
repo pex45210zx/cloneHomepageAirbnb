@@ -215,6 +215,10 @@ p.danger {
     height: 24px;
 }
 
+.link-box {
+    cursor: pointer;
+}
+
 .link-box p {
     display: flex;
     justify-content: center;
