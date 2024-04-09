@@ -1,8 +1,16 @@
-import React from 'react'
-import './siteContent.css'
+import React from 'react';
+import Card from './Card.jsx';
+import './siteContent.css';
 
-export const Contents = () => {
-  return (
-    <div className='haha'>Topic</div>
-  )
+const SiteContent = () => {
+    return (
+        <div className="con-content">
+            <div className="card-area">
+              <Card />
+              <Card />
+            </div>
+        </div>
+    );
 }
+
+export default SiteContent;
